@@ -1,3 +1,18 @@
-<p>
-tabuada works!
-</p>
+<div>
+  <h3>Tabuada</h3>
+
+  <input type="number" [(ngModel)]="n"/>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Expressão</th>
+        <th>Resultado</th>
+      </tr>
+      <tr *ngFor="let item of getTabuadaList(); index as i">
+        <td>{{n}} * {{i}}</td>
+        <td>{{n * i}}</td>
+      </tr>
+    </thead>
+  </table>
+</div>
