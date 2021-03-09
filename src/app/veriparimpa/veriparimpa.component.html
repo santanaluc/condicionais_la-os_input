@@ -1,3 +1,11 @@
-<p>
-veriparimpa works!
-</p>
+<div class="container-fluid">
+  <h3>Verificar Par / Ímpar</h3>
+  <input type="number" placeholder="Digite um número" [(ngModel)]="numero"/>
+
+  <div *ngIf="isPar()">
+    O número {{numero}} é Par!
+  </div>
+  <div *ngIf="!isPar()">
+    O número {{numero}} é Ímpar!
+  </div>
+</div>
