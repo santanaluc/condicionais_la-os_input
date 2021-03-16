@@ -14,10 +14,8 @@ export class TabuadaComponent implements OnInit {
 
   getTabuada() {
     let i: number = 0;
-    while (i <= 10) {
-      let conta: number = i * this.n;
-      return conta;
-    }
+    let conta: number = i * this.n;
+    return conta;
   }
 
   getTabuadaList() {
